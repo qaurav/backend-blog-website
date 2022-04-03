@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const router = require("express").Router();
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
@@ -16,6 +17,7 @@ router.post("/register", async (req, res) =>{
         const {password, ...others} = user._doc;
         res.status(200).json(others); 
     } catch(err){
+
         res.status(500).json(err.message);
     }
 })

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const router = require("express").Router();
 const User = require("../models/User");
 // const Post = require("../models/Post");
@@ -30,7 +31,7 @@ router.put("/:id", async (req, res) =>{
 });
 
 
-//delete
+//delete users
 
 
 // router.delete("/:id", async (req, res) =>{
